@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -13,7 +14,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="space-y-2">
           <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 bg-terra-crimson" />
+            <BrandLogo size={22} color="#FFFDF7" className="shrink-0" />
             <span className="font-bold text-lg text-white uppercase tracking-tight">
               Lokin Labs
             </span>

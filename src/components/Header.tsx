@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/95 border-b border-black/[0.08]">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
         {/* Studio Identifier */}
-        <Link href="#hero" className="flex items-center gap-3.5 group">
-          <span className="w-3.5 h-3.5 bg-ink-dark" />
+        <Link href="#hero" className="flex items-center gap-3 group">
+          <BrandLogo size={26} color="#2E3D27" className="shrink-0" />
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
           </span>

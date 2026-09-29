@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     description:
       "We get an idea and we don't let it go until it's live.",
   },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
