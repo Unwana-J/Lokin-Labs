@@ -23,7 +23,7 @@ const TABS: TabMeta[] = [
     label: "01 Daily Dispatch",
     url: "https://fey.lokinlabs.com.ng/",
     icon: Mic,
-    image: "/screenshots/fey-dashboard.png",
+    image: "/screenshots/fey-dashboard-cropped.png",
     alt: "Fey Live Daily Dispatch and 90-second speech challenge interface",
     headline: "Daily Synthesis & 90-Second Vocal Drill",
     description:
@@ -34,7 +34,7 @@ const TABS: TabMeta[] = [
     label: "02 Parlor Games",
     url: "https://fey.lokinlabs.com.ng/games",
     icon: Gamepad2,
-    image: "/screenshots/fey-games.png",
+    image: "/screenshots/fey-games-cropped.png",
     alt: "Fey Parlor Games: Online Articulate, Naija Trivia, and The Podium",
     headline: "Multiplayer Parlor Debates & Salons",
     description:
@@ -45,7 +45,7 @@ const TABS: TabMeta[] = [
     label: "03 Constellation",
     url: "https://fey.lokinlabs.com.ng/constellation",
     icon: Network,
-    image: "/screenshots/fey-constellation.png",
+    image: "/screenshots/fey-constellation-cropped.png",
     alt: "Fey Knowledge Constellation cognitive graph",
     headline: "Interactive Cognitive Synapse Graph",
     description:
@@ -56,7 +56,7 @@ const TABS: TabMeta[] = [
     label: "04 Topic Roulette",
     url: "https://fey.lokinlabs.com.ng/discover",
     icon: Compass,
-    image: "/screenshots/fey-discover.png",
+    image: "/screenshots/fey-discover-cropped.png",
     alt: "Fey Topic Roulette across 22 disciplines",
     headline: "Discipline Roulette & Exploration",
     description:
@@ -232,7 +232,7 @@ export function FeySpotlight() {
               </div>
 
               {/* Live Captured Screenshot Image */}
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 group">
+              <div className="relative aspect-[1200/813] w-full overflow-hidden bg-[#FAF7F0] group">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeTab.id}
@@ -246,7 +246,7 @@ export function FeySpotlight() {
                     <img
                       src={activeTab.image}
                       alt={activeTab.alt}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                      className="w-full h-full object-contain object-top transition-transform duration-500 group-hover:scale-[1.01]"
                     />
                   </motion.div>
                 </AnimatePresence>
