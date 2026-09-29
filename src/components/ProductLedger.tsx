@@ -19,23 +19,22 @@ export function ProductLedger() {
       id="warehouse"
       className="min-h-screen px-6 sm:px-12 py-28 max-w-7xl mx-auto border-t border-[rgba(20,26,15,0.08)]"
     >
-      {/* Ledger Header */}
+      {/* Products Header */}
       <div className="max-w-3xl mb-12">
         <div className="flex items-center gap-3 font-mono text-xs text-ink-muted uppercase tracking-wider mb-3">
-          <span>[ ARCHIVAL REGISTER ]</span>
-          <span className="text-ink-soft">—</span>
-          <span>6 PRODUCTION RELEASES</span>
+          <span>PORTFOLIO</span>
+          <span className="text-ink-soft">·</span>
+          <span>6 LIVE RELEASES</span>
         </div>
         <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-dark">
-          The Product Ledger.
+          Products.
         </h2>
         <p className="text-lg text-ink-muted mt-3">
-          An index of live web apps, AI tools, games, and strategic delivery
-          systems engineered by Lokin Labs.
+          A catalog of live web apps, AI tools, and games engineered by Lokin Labs.
         </p>
       </div>
 
-      {/* Editorial Text Tabs (Filter by Domain - No rounded pills!) */}
+      {/* Filter Tabs */}
       <div className="flex flex-wrap items-center gap-8 mb-8 border-b border-[rgba(20,26,15,0.08)]">
         <button
           onClick={() => setActiveFilter("all")}
@@ -45,7 +44,7 @@ export function ProductLedger() {
               : "text-ink-muted hover:text-ink-dark"
           }`}
         >
-          ALL RELEASES (06)
+          ALL (6)
         </button>
         <button
           onClick={() => setActiveFilter("flagship")}
@@ -55,7 +54,7 @@ export function ProductLedger() {
               : "text-ink-muted hover:text-ink-dark"
           }`}
         >
-          FLAGSHIP (01)
+          FLAGSHIP (1)
         </button>
         <button
           onClick={() => setActiveFilter("ai-tools")}
@@ -65,7 +64,7 @@ export function ProductLedger() {
               : "text-ink-muted hover:text-ink-dark"
           }`}
         >
-          AI &amp; INTELLIGENCE (03)
+          AI TOOLS (3)
         </button>
         <button
           onClick={() => setActiveFilter("delivery")}
@@ -75,7 +74,7 @@ export function ProductLedger() {
               : "text-ink-muted hover:text-ink-dark"
           }`}
         >
-          STRATEGIC DELIVERY (02)
+          DELIVERY (2)
         </button>
         <button
           onClick={() => setActiveFilter("learning")}
@@ -85,26 +84,26 @@ export function ProductLedger() {
               : "text-ink-muted hover:text-ink-dark"
           }`}
         >
-          LEARNING &amp; PLAY (02)
+          GAMES &amp; TOOLS (2)
         </button>
       </div>
 
-      {/* Ledger Table */}
+      {/* Products Table */}
       <div className="border-t border-[rgba(20,26,15,0.08)] divide-y divide-[rgba(20,26,15,0.08)]">
         {/* Table Header (Hidden on Mobile) */}
         <div className="hidden md:grid grid-cols-12 py-3 font-mono text-[11px] text-ink-soft uppercase tracking-wider">
-          <div className="col-span-1">CODE</div>
-          <div className="col-span-5">PRODUCT &amp; THESIS</div>
-          <div className="col-span-3">TECH STACK &amp; DOMAIN</div>
+          <div className="col-span-1">#</div>
+          <div className="col-span-5">PRODUCT &amp; OVERVIEW</div>
+          <div className="col-span-3">TECH STACK</div>
           <div className="col-span-2">STATUS</div>
-          <div className="col-span-1 text-right">ACTION</div>
+          <div className="col-span-1 text-right">LINK</div>
         </div>
 
         {/* Product Rows */}
         {filteredProducts.map((product: ProductItem) => (
           <div
             key={product.id}
-            className="ledger-row py-8 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline group"
+            className="product-row py-8 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline group"
           >
             {/* Code */}
             <div

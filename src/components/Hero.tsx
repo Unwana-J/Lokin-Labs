@@ -17,9 +17,9 @@ export function Hero() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center gap-3 font-mono text-xs text-ink-muted uppercase tracking-wider"
         >
-          <span className="text-terra-crimson font-bold">[ LK-FOUNDRY ]</span>
-          <span className="text-ink-soft">—</span>
-          <span>A DIGITAL PRODUCT LAB &amp; CREATIVE ENGINE</span>
+          <span className="text-terra-crimson font-bold">DIGITAL PRODUCT LAB</span>
+          <span className="text-ink-soft">·</span>
+          <span>ABUJA, NIGERIA</span>
         </motion.div>
 
         {/* Main Headline in Collective Studio Voice */}
@@ -66,7 +66,7 @@ export function Hero() {
             href="#warehouse"
             className="btn-studio border border-black/20 text-ink-dark hover:border-black/60 bg-transparent text-sm"
           >
-            <span>Explore The 6 Products</span>
+            <span>Explore Products</span>
             <ArrowDown className="w-4 h-4" />
           </a>
         </motion.div>
@@ -81,10 +81,10 @@ export function Hero() {
       >
         <div>
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
-            FOUNDRY DNA
+            STUDIO FOCUS
           </span>
           <span className="text-ink-dark font-bold">
-            OBSESSIVE CRAFT · RAPID EXPERIMENTATION
+            PRODUCT DESIGN &amp; ENGINEERING
           </span>
         </div>
         <div>
@@ -109,7 +109,7 @@ export function Hero() {
           </span>
           <span className="text-emerald-700 font-bold flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
-            6 LIVE PRODUCTION RUNTIMES
+            6 LIVE PRODUCTS
           </span>
         </div>
       </motion.div>

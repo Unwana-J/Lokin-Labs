@@ -42,7 +42,7 @@ export function Footer() {
             href="#warehouse"
             className="hover:text-white transition-colors"
           >
-            The Ledger
+            Products
           </Link>
           <Link
             href="#thesis"

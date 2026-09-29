@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Lokin Labs — Fun, Sharp & Thoughtful Digital Products",
   description:
-    "An independent digital product lab and software foundry. We get an idea and we don't let it go until it's live.",
+    "An independent digital product lab. We get an idea and we don't let it go until it's live.",
   metadataBase: new URL("https://lokinlabs.com.ng"),
   openGraph: {
     title: "Lokin Labs — Fun, Sharp & Thoughtful Digital Products",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lokin Labs — Digital Product Lab",
     description:
-      "We get an idea and we don't let it go until it's live. 6 live production systems.",
+      "We get an idea and we don't let it go until it's live.",
   },
 };
 

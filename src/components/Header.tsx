@@ -16,9 +16,6 @@ export function Header() {
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
           </span>
-          <span className="text-xs font-bold text-ink-muted font-mono hidden sm:inline tracking-wider">
-            / THE FULL LOOP
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -39,7 +36,7 @@ export function Header() {
             href="#warehouse"
             className="hover:text-terra-crimson transition-colors duration-200"
           >
-            Products &amp; Ledger
+            Products
           </Link>
           <Link
             href="#about-creator"
@@ -94,7 +91,7 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
             className="block text-ink-dark hover:text-terra-crimson py-1"
           >
-            § 03 / Products &amp; Ledger
+            § 03 / Products
           </Link>
           <Link
             href="#about-creator"

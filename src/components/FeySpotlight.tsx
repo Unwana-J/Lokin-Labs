@@ -53,9 +53,9 @@ const TABS: TabMeta[] = [
     icon: Network,
     image: feyConstellation,
     alt: "Fey Knowledge Constellation cognitive graph",
-    headline: "Interactive Cognitive Synapse Graph",
+    headline: "Interactive Knowledge Graph",
     description:
-      "Spatial memory network that maps concepts, articulation streaks, and mastered disciplines over time.",
+      "Visual topic map tracking your articulation drills, consistency streaks, and mastered concepts.",
   },
   {
     id: "discover",
@@ -83,7 +83,7 @@ export function FeySpotlight() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[rgba(0,0,0,0.08)] gap-6">
         <div>
           <span className="font-mono text-xs text-terra-crimson font-semibold uppercase tracking-wider block mb-2">
-            RELEASE 01 · CROWN PLATFORM
+            FLAGSHIP PRODUCT
           </span>
           <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-dark">
             Fey — Think Deeper. Speak Better.
@@ -258,7 +258,7 @@ export function FeySpotlight() {
           </div>
 
           <div className="pt-6 mt-6 text-xs text-white/50 flex justify-between items-center border-t border-white/10 font-mono">
-            <span>COGNITIVE ARTICULATION PLATFORM</span>
+            <span>VOCAL ARTICULATION PLATFORM</span>
             <a
               href="https://fey.lokinlabs.com.ng"
               target="_blank"

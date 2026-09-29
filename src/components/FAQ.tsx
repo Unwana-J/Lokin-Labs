@@ -15,25 +15,25 @@ const FAQS: FAQItem[] = [
     number: "01",
     question: "What is Lokin Labs?",
     answer:
-      "Lokin Labs is an independent digital product lab and creative software foundry. We conceive, design, and engineer sharp, high-craft web applications, AI co-pilots, cognitive parlor games, and strategic delivery systems that users genuinely enjoy using.",
+      "Lokin Labs is an independent digital product lab. We design and build web applications, AI tools, and games that are sharp to use, fast, and genuinely enjoyable.",
   },
   {
     number: "02",
-    question: "Are all the products in the Ledger actually live?",
+    question: "Are all these products actually live?",
     answer:
-      "Yes. Every system indexed in the Lokin Labs Ledger—from Fey to Creed, Roost AI, Vantage, Qore, and Lokin Study—is a live, fully deployed production runtime accessible right now with real workflows and AI integrations.",
+      "Yes. Every product showcased—from Fey to Creed, Roost AI, Vantage, Qore, and Lokin Study—is live and accessible online right now.",
   },
   {
     number: "03",
     question: "What is the design philosophy behind Lokin Labs products?",
     answer:
-      "We build at the intersection of high taste and ruthless engineering execution. We don’t believe in software that feels like administrative chores or games that lack intellectual depth. Every product is engineered to be sharp, delightful, and immediately responsive.",
+      "We build at the intersection of great design and solid engineering. We don't believe in sterile tools or mindless games. Every product is built to be sharp, delightful, and immediately responsive.",
   },
   {
     number: "04",
     question: "How can we collaborate, partner, or get in touch?",
     answer:
-      "Whether you are interested in design partnership, enterprise licensing, or exploratory discussions, we welcome direct contact at letslokin@gmail.com.",
+      "Whether you are interested in design partnership, product development, or exploratory discussions, we welcome direct contact at letslokin@gmail.com.",
   },
 ];
 
@@ -51,7 +51,7 @@ export function FAQ() {
     >
       <div className="mb-12">
         <span className="font-mono text-xs text-ink-muted uppercase tracking-wider block mb-2">
-          [ LAB NOTES &amp; FAQ ]
+          [ FAQ ]
         </span>
         <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-ink-dark">
           Frequently Asked Questions.

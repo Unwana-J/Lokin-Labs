@@ -19,10 +19,9 @@ export function FounderProfile() {
 
         <div className="space-y-6 text-base sm:text-lg text-ink-muted leading-relaxed">
           <p>
-            Lokin Labs was born out of an obsession with the complete loop of creation:
-            spotting something that could make a workflow sharper, a team less dependent
-            on heroics, or a digital experience genuinely unforgettable—and refusing to
-            let it sit in a conceptual graveyard.
+            Lokin Labs was founded on a simple drive: spotting something that
+            could make software sharper, workflows faster, or a digital experience
+            genuinely memorable—and refusing to let it sit in a conceptual graveyard.
           </p>
           <p>
             Most digital tools are built in silos: designers hand off static mockups,

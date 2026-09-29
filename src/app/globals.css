@@ -57,12 +57,12 @@ body {
 }
 
 /* Table row architectural hover */
-.ledger-row {
+.product-row {
   transition: background-color 0.15s ease, border-color 0.15s ease;
   border-bottom: 1px solid var(--canvas-line);
 }
 
-.ledger-row:hover {
+.product-row:hover {
   background-color: #F8F9FA;
 }
 
