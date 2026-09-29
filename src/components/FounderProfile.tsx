@@ -14,8 +14,7 @@ export function FounderProfile() {
         </span>
 
         <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-ink-dark leading-tight">
-          &ldquo;Building the right thing and getting it reliably to customers
-          are treated as one responsibility, not two.&rdquo;
+          &ldquo;Building the right thing and getting it reliably to customers are treated as one responsibility, not two.&rdquo;
         </h2>
 
         <div className="space-y-6 text-base sm:text-lg text-ink-muted leading-relaxed">

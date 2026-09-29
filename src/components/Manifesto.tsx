@@ -46,9 +46,7 @@ export function Manifesto() {
 
         {/* Studio Philosophy Block */}
         <div className="p-6 bg-white/5 border border-white/10 rounded-sm font-mono text-xs sm:text-sm text-white/90 leading-relaxed">
-          &ldquo;We thrive where building the right thing and getting it
-          reliably to customers are treated as one responsibility, not
-          two.&rdquo;
+          &ldquo;We thrive where building the right thing and getting it reliably to customers are treated as one responsibility, not two.&rdquo;
         </div>
 
         <div className="pt-2">
