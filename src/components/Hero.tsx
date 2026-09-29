@@ -77,14 +77,14 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="pt-12 grid grid-cols-2 sm:grid-cols-4 gap-8 border-t border-[rgba(20,26,15,0.08)] font-mono text-xs"
+        className="pt-12 grid grid-cols-2 sm:grid-cols-4 gap-8 border-t border-black/[0.08] font-mono text-xs"
       >
         <div>
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
             FOUNDRY DNA
           </span>
           <span className="text-ink-dark font-bold">
-            ENTERPRISE RIGOR · CONSUMER PLAY
+            OBSESSIVE CRAFT · RAPID EXPERIMENTATION
           </span>
         </div>
         <div>

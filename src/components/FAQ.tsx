@@ -25,10 +25,9 @@ const FAQS: FAQItem[] = [
   },
   {
     number: "03",
-    question:
-      "What is the relationship between the 400+ financial institutions and Lokin Labs?",
+    question: "What is the design philosophy behind Lokin Labs products?",
     answer:
-      "The 400+ financial institutions track record belongs directly to the leadership DNA of our team lead, Unwana John-King, who directed technical product delivery and implementation management across mobile banking, payments infrastructure, and BaaS. That battle-tested enterprise rigor is what ensures Lokin Labs products are as resilient under the hood as they are playful on the surface.",
+      "We build at the intersection of high taste and ruthless engineering execution. We don’t believe in software that feels like administrative chores or games that lack intellectual depth. Every product is engineered to be sharp, delightful, and immediately responsive.",
   },
   {
     number: "04",
