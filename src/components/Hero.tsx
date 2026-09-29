@@ -31,10 +31,7 @@ export function Hero() {
         >
           We get an idea and <br />
           we don’t let it go <br />
-          <span className="text-terra-crimson underline decoration-chartreuse decoration-wavy decoration-2">
-            until it’s live
-          </span>
-          .
+          <span className="text-terra-crimson">until it’s live.</span>
         </motion.h1>
 
         {/* Subtitle */}
