@@ -7,9 +7,13 @@ export function Manifesto() {
   return (
     <section
       id="thesis"
-      className="min-h-screen bg-obsidian-deep text-white flex items-center px-6 sm:px-12 py-28 relative"
+      className="min-h-screen bg-obsidian-deep text-white flex items-center px-6 sm:px-12 py-28 relative overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto space-y-12">
+      {/* Soft atmospheric ambient glow */}
+      <div className="absolute top-0 right-0 w-96 sm:w-[500px] h-96 sm:h-[500px] rounded-full bg-terra-crimson/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 sm:w-[500px] h-96 sm:h-[500px] rounded-full bg-brand-blue/10 blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto space-y-12 relative z-10">
         <span className="font-mono text-xs text-neutral-400 uppercase tracking-widest block">
           § 01 / LAB PRINCIPLES
         </span>

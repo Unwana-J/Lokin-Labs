@@ -82,9 +82,10 @@ export function FeySpotlight() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[rgba(0,0,0,0.08)] gap-6">
         <div>
-          <span className="font-mono text-xs text-terra-crimson font-semibold uppercase tracking-wider block mb-2">
-            FLAGSHIP PRODUCT
-          </span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-terra-crimson animate-pulse" />
+            <span>FLAGSHIP · VOCAL ARTICULATION PLATFORM</span>
+          </div>
           <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-dark">
             Fey — Think Deeper. Speak Better.
           </h2>
@@ -126,43 +127,45 @@ export function FeySpotlight() {
               friends in live multiplayer parlor debate rooms.
             </p>
 
-            {/* 4-Quadrant Architecture Grid */}
-            <div className="grid grid-cols-2 gap-px bg-black/10 border border-black/10 text-xs">
-              <div className="p-4 bg-canvas-surface">
-                <span className="font-mono text-[10px] text-ink-soft uppercase block mb-1">
-                  01 / THE DRILL
-                </span>
-                <strong className="text-ink-dark font-bold text-sm block">
-                  Feynman Synthesis
-                </strong>
-                <span className="text-[11px] text-ink-muted">Timed vocal clarity drills</span>
-              </div>
-              <div className="p-4 bg-canvas-surface">
-                <span className="font-mono text-[10px] text-ink-soft uppercase block mb-1">
-                  02 / THE GAME
-                </span>
-                <strong className="text-ink-dark font-bold text-sm block">
-                  Social Parlor Debates
-                </strong>
-                <span className="text-[11px] text-ink-muted">Multiplayer salon arenas</span>
-              </div>
-              <div className="p-4 bg-canvas-surface">
-                <span className="font-mono text-[10px] text-ink-soft uppercase block mb-1">
-                  03 / REALTIME
-                </span>
-                <strong className="text-ink-dark font-bold text-sm block">
-                  Speech AI Engine
-                </strong>
-                <span className="text-[11px] text-ink-muted">Instant clarity scoring</span>
-              </div>
-              <div className="p-4 bg-canvas-surface">
-                <span className="font-mono text-[10px] text-ink-soft uppercase block mb-1">
-                  04 / RETENTION
-                </span>
-                <strong className="text-ink-dark font-bold text-sm block">
-                  Synapse Constellation
-                </strong>
-                <span className="text-[11px] text-ink-muted">Interactive topic graphs</span>
+            {/* 3-Step Tactile Process Pipeline */}
+            <div className="space-y-2 pt-2">
+              <span className="font-mono text-[11px] text-ink-soft uppercase tracking-wider block">
+                THE 3-STEP VOCAL PIPELINE
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+                <div className="p-3.5 bg-canvas-surface border border-black/[0.08] rounded-md space-y-1">
+                  <span className="font-mono text-terra-crimson font-bold text-xs block">
+                    01. CONCEPT
+                  </span>
+                  <strong className="text-ink-dark font-bold block text-xs">
+                    Curate / Spin
+                  </strong>
+                  <span className="text-[11px] text-ink-muted leading-tight block">
+                    Pick a topic across 22 disciplines
+                  </span>
+                </div>
+                <div className="p-3.5 bg-canvas-surface border border-black/[0.08] rounded-md space-y-1">
+                  <span className="font-mono text-brand-blue font-bold text-xs block">
+                    02. DRILL
+                  </span>
+                  <strong className="text-ink-dark font-bold block text-xs">
+                    90s Aloud
+                  </strong>
+                  <span className="text-[11px] text-ink-muted leading-tight block">
+                    Explain under timed pressure without jargon
+                  </span>
+                </div>
+                <div className="p-3.5 bg-canvas-surface border border-black/[0.08] rounded-md space-y-1">
+                  <span className="font-mono text-emerald-700 font-bold text-xs block">
+                    03. SCORE
+                  </span>
+                  <strong className="text-ink-dark font-bold block text-xs">
+                    Speech AI
+                  </strong>
+                  <span className="text-[11px] text-ink-muted leading-tight block">
+                    Clarity scoring, filler words &amp; topic graph
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -181,9 +184,13 @@ export function FeySpotlight() {
           </div>
         </div>
 
-        {/* Right: Clean Studio Gallery Showcase (No fake browser frame, No neon colors) */}
-        <div className="lg:col-span-7 bg-obsidian-deep p-6 sm:p-10 text-white flex flex-col justify-between">
-          <div className="space-y-6">
+        {/* Right: Clean Studio Gallery Showcase with atmospheric ambient lighting */}
+        <div className="lg:col-span-7 bg-obsidian-deep p-6 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+          {/* Subtle ambient atmospheric lighting */}
+          <div className="absolute -top-16 -right-16 w-80 h-80 rounded-full bg-terra-crimson/15 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -left-16 w-80 h-80 rounded-full bg-brand-blue/15 blur-3xl pointer-events-none" />
+
+          <div className="space-y-6 relative z-10">
             {/* Minimalist Studio Tab Switcher */}
             <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
               <span className="font-mono text-xs uppercase tracking-wider text-white/50">

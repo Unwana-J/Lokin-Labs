@@ -15,11 +15,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center gap-3 font-mono text-xs text-ink-muted uppercase tracking-wider"
+          className="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson w-fit shadow-xs"
         >
-          <span className="text-terra-crimson font-bold">DIGITAL PRODUCT LAB</span>
-          <span className="text-ink-soft">·</span>
-          <span>ABUJA, NIGERIA</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-terra-crimson animate-pulse" />
+          <span>DIGITAL PRODUCT LAB · ABUJA, NIGERIA</span>
         </motion.div>
 
         {/* Main Headline in Collective Studio Voice */}

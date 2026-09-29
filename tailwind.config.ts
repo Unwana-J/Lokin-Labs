@@ -12,26 +12,33 @@ const config: Config = {
         canvas: {
           DEFAULT: "#FFFFFF",
           surface: "#F8F9FA",
-          subtle: "#F4F4F6",
-          line: "rgba(0, 0, 0, 0.08)",
+          subtle: "#F2F5F8",
+          line: "rgba(17, 22, 31, 0.08)",
         },
         obsidian: {
-          deep: "#090A0E",
-          dark: "#12141A",
-          surface: "#181B22",
-          subtle: "rgba(255, 255, 255, 0.05)",
+          deep: "#10141D",
+          dark: "#141A24",
+          surface: "#1A2230",
+          subtle: "rgba(255, 255, 255, 0.06)",
         },
         terra: {
           crimson: "#9B283A",
           bright: "#BA3248",
+          light: "#FBF0F2",
+          subtle: "#FDF7F8",
+        },
+        brand: {
+          blue: "#3E6B89",
+          blueLight: "#EBF3F8",
+          blueSubtle: "#F4F8FA",
         },
         gold: {
           warm: "#E5A024",
         },
         ink: {
-          dark: "#09090B",
-          muted: "#52525B",
-          soft: "#A1A1AA",
+          dark: "#10141D",
+          muted: "#4A5568",
+          soft: "#8A94A6",
         },
       },
       fontFamily: {

@@ -103,7 +103,7 @@ export function ProductLedger() {
         {filteredProducts.map((product: ProductItem) => (
           <div
             key={product.id}
-            className="product-row py-8 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline group"
+            className="product-row py-8 px-4 -mx-4 rounded-lg grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline group"
           >
             {/* Code */}
             <div
@@ -121,7 +121,11 @@ export function ProductLedger() {
                   {product.name}
                 </h3>
                 <span
-                  className={`text-xs font-mono font-semibold ${product.badgeColor}`}
+                  className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${
+                    product.isFlagship
+                      ? "bg-terra-light text-terra-crimson border-terra-crimson/25"
+                      : "bg-canvas-subtle text-ink-dark border-black/[0.08]"
+                  }`}
                 >
                   {product.badge}
                 </span>
