@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-canvas selection:bg-terra-crimson selection:text-white">
+    <main className="min-h-screen bg-canvas selection:bg-[#2E3D27] selection:text-white">
       <Header />
       <Hero />
       <Manifesto />

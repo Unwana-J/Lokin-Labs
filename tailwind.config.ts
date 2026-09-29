@@ -31,6 +31,10 @@ const config: Config = {
           blue: "#3E6B89",
           blueLight: "#EBF3F8",
           blueSubtle: "#F4F8FA",
+          olive: "#2E3D27",
+          "olive-bright": "#3A4F32",
+          "olive-light": "#EBF0E8",
+          "olive-subtle": "#F5F7F4",
         },
         gold: {
           warm: "#E5A024",
@@ -43,7 +47,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "'Geist'",
+          "'Cabinet Grotesk'",
           "-apple-system",
           "BlinkMacSystemFont",
           "'Segoe UI'",

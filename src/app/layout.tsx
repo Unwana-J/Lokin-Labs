@@ -43,11 +43,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans selection:bg-terra-crimson selection:text-white bg-canvas text-ink-dark">
+      <body className="font-sans selection:bg-[#2E3D27] selection:text-white bg-canvas text-ink-dark">
         {children}
       </body>
     </html>
