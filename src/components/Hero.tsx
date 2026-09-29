@@ -15,9 +15,8 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson w-fit shadow-xs"
+          className="inline-flex items-center px-3.5 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson w-fit shadow-xs"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-terra-crimson animate-pulse" />
           <span>DIGITAL PRODUCT LAB · ABUJA, NIGERIA</span>
         </motion.div>
 
@@ -106,8 +105,7 @@ export function Hero() {
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
             CATALOG STATUS
           </span>
-          <span className="text-emerald-700 font-bold flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
+          <span className="text-emerald-700 font-bold">
             6 LIVE PRODUCTS
           </span>
         </div>

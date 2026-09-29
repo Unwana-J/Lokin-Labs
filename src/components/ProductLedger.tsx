@@ -145,8 +145,7 @@ export function ProductLedger() {
             </div>
 
             {/* Status */}
-            <div className="md:col-span-2 font-mono text-xs text-emerald-800 font-semibold flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
+            <div className="md:col-span-2 font-mono text-xs text-emerald-800 font-semibold">
               <span>{product.status}</span>
             </div>
 
