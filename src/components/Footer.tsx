@@ -14,7 +14,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="space-y-2">
           <div className="flex items-center gap-2.5">
-            <BrandLogo size={22} variant="white" className="shrink-0" />
+            <BrandLogo size={22} color="white" />
             <span className="font-bold text-lg text-white uppercase tracking-tight">
               Lokin Labs
             </span>
