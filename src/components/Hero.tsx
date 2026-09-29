@@ -10,16 +10,6 @@ export function Hero() {
       className="relative min-h-[92vh] flex flex-col justify-between px-6 sm:px-12 pt-32 pb-14 max-w-7xl mx-auto"
     >
       <div className="max-w-5xl space-y-8 my-auto">
-        {/* Studio Identification Rule */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center px-3.5 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson w-fit shadow-xs"
-        >
-          <span>DIGITAL PRODUCT LAB · ABUJA, NIGERIA</span>
-        </motion.div>
-
         {/* Main Headline in Collective Studio Voice */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

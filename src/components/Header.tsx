@@ -13,7 +13,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
         {/* Studio Identifier */}
         <Link href="#hero" className="flex items-center gap-3 group">
-          <BrandLogo size={26} color="#2E3D27" className="shrink-0" />
+          <BrandLogo size={28} variant="olive" className="shrink-0" />
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
           </span>
