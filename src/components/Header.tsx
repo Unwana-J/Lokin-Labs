@@ -12,7 +12,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
         {/* Studio Identifier */}
         <Link href="#hero" className="flex items-center gap-3.5 group">
-          <span className="w-3.5 h-3.5 bg-ink-dark transition-transform duration-300 group-hover:rotate-45" />
+          <span className="w-3.5 h-3.5 bg-ink-dark" />
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
           </span>
