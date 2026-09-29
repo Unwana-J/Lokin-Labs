@@ -1,8 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image, { StaticImageData } from "next/image";
 import { ArrowUpRight, Compass, Gamepad2, Mic, Network } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+
+import feyDashboard from "../../public/screenshots/fey-dashboard-cropped.png";
+import feyGames from "../../public/screenshots/fey-games-cropped.png";
+import feyConstellation from "../../public/screenshots/fey-constellation-cropped.png";
+import feyDiscover from "../../public/screenshots/fey-discover-cropped.png";
 
 type FeyTab = "dispatch" | "games" | "constellation" | "discover";
 
@@ -11,7 +17,7 @@ interface TabMeta {
   label: string;
   url: string;
   icon: typeof Mic;
-  image: string;
+  image: StaticImageData;
   alt: string;
   headline: string;
   description: string;
@@ -23,7 +29,7 @@ const TABS: TabMeta[] = [
     label: "01 Daily Dispatch",
     url: "https://fey.lokinlabs.com.ng/",
     icon: Mic,
-    image: "/screenshots/fey-dashboard-cropped.png",
+    image: feyDashboard,
     alt: "Fey Live Daily Dispatch and 90-second speech challenge interface",
     headline: "Daily Synthesis & 90-Second Vocal Drill",
     description:
@@ -34,7 +40,7 @@ const TABS: TabMeta[] = [
     label: "02 Parlor Games",
     url: "https://fey.lokinlabs.com.ng/games",
     icon: Gamepad2,
-    image: "/screenshots/fey-games-cropped.png",
+    image: feyGames,
     alt: "Fey Parlor Games: Online Articulate, Naija Trivia, and The Podium",
     headline: "Multiplayer Parlor Debates & Salons",
     description:
@@ -45,7 +51,7 @@ const TABS: TabMeta[] = [
     label: "03 Constellation",
     url: "https://fey.lokinlabs.com.ng/constellation",
     icon: Network,
-    image: "/screenshots/fey-constellation-cropped.png",
+    image: feyConstellation,
     alt: "Fey Knowledge Constellation cognitive graph",
     headline: "Interactive Cognitive Synapse Graph",
     description:
@@ -56,7 +62,7 @@ const TABS: TabMeta[] = [
     label: "04 Topic Roulette",
     url: "https://fey.lokinlabs.com.ng/discover",
     icon: Compass,
-    image: "/screenshots/fey-discover-cropped.png",
+    image: feyDiscover,
     alt: "Fey Topic Roulette across 22 disciplines",
     headline: "Discipline Roulette & Exploration",
     description:
@@ -215,7 +221,7 @@ export function FeySpotlight() {
             {/* Actual Live Screenshot Frame */}
             <div className="relative border border-white/15 bg-black/40 rounded-sm overflow-hidden shadow-2xl">
               {/* Browser Address Bar */}
-              <div className="px-4 py-2 bg-black/50 border-b border-white/10 flex items-center justify-between font-mono text-[11px] text-white/50">
+              <div className="px-4 py-2 bg-black/60 border-b border-white/10 flex items-center justify-between font-mono text-[11px] text-white/50">
                 <div className="flex items-center gap-2 truncate">
                   <span className="text-emerald-400 font-bold">HTTPS</span>
                   <span className="text-white/80">{activeTab.url}</span>
@@ -231,29 +237,31 @@ export function FeySpotlight() {
                 </a>
               </div>
 
-              {/* Live Captured Screenshot Image */}
-              <div className="relative aspect-[1200/813] w-full overflow-hidden bg-[#FAF7F0] group">
+              {/* Live Captured Screenshot Image with Next.js Image static import */}
+              <div className="relative w-full overflow-hidden bg-[#FAF7F0] group">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeTab.id}
-                    initial={{ opacity: 0, scale: 0.98 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 1.01 }}
-                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative w-full h-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}
+                    className="w-full h-auto block"
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={activeTab.image}
                       alt={activeTab.alt}
-                      className="w-full h-full object-contain object-top transition-transform duration-500 group-hover:scale-[1.01]"
+                      priority
+                      placeholder="blur"
+                      className="w-full h-auto block object-cover"
+                      sizes="(max-width: 1024px) 100vw, 650px"
                     />
                   </motion.div>
                 </AnimatePresence>
               </div>
 
               {/* Caption Overlay */}
-              <div className="p-4 bg-black/80 border-t border-white/10 space-y-1">
+              <div className="p-4 bg-black/90 border-t border-white/10 space-y-1">
                 <div className="flex items-center justify-between font-mono text-xs">
                   <span className="text-chartreuse font-bold">
                     {activeTab.headline}
