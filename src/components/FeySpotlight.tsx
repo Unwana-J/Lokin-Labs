@@ -80,7 +80,7 @@ export function FeySpotlight() {
       className="min-h-screen flex flex-col justify-center px-6 sm:px-12 py-28 max-w-7xl mx-auto"
     >
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[rgba(20,26,15,0.08)] gap-6">
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[rgba(0,0,0,0.08)] gap-6">
         <div>
           <span className="font-mono text-xs text-terra-crimson font-semibold uppercase tracking-wider block mb-2">
             RELEASE 01 · CROWN PLATFORM
@@ -101,7 +101,7 @@ export function FeySpotlight() {
             href="https://fey.lokinlabs.com.ng"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-studio bg-terra-crimson text-white hover:bg-terra-bright text-xs shadow-sm font-bold"
+            className="btn-studio bg-ink-dark text-white hover:bg-terra-crimson text-xs shadow-sm font-bold"
           >
             <span>Launch Fey</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -110,9 +110,9 @@ export function FeySpotlight() {
       </div>
 
       {/* Fey Structural Spread */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 border border-black/10 bg-canvas-surface overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-12 border border-black/10 bg-canvas overflow-hidden shadow-sm">
         {/* Left: Story & Method Specs */}
-        <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between space-y-8 bg-canvas">
+        <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between space-y-8 bg-canvas border-b lg:border-b-0 lg:border-r border-black/10">
           <div className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-ink-dark leading-snug">
               Most learning is passive. Fey turns your brain on. Practice explaining
@@ -181,22 +181,16 @@ export function FeySpotlight() {
           </div>
         </div>
 
-        {/* Right: Actual Live Screenshots & Architectural Console */}
-        <div className="lg:col-span-7 bg-olive-dark p-6 sm:p-10 text-white flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-black/10">
-          <div>
-            {/* Viewport Control Bar */}
-            <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/10 mb-5 font-mono text-xs">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
-                <span className="text-white/40 text-[11px] ml-2 hidden sm:inline">
-                  LIVE INTERFACE VIEWPORT
-                </span>
-              </div>
+        {/* Right: Clean Studio Gallery Showcase (No fake browser frame, No neon colors) */}
+        <div className="lg:col-span-7 bg-obsidian-deep p-6 sm:p-10 text-white flex flex-col justify-between">
+          <div className="space-y-6">
+            {/* Minimalist Studio Tab Switcher */}
+            <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
+              <span className="font-mono text-xs uppercase tracking-wider text-white/50">
+                LIVE PRODUCTION INTERFACE
+              </span>
 
-              {/* Viewport Tabs */}
-              <div className="flex flex-wrap items-center gap-3 sm:gap-5">
+              <div className="flex flex-wrap items-center gap-4 sm:gap-6">
                 {TABS.map((tab) => {
                   const Icon = tab.icon;
                   const isActive = activeTabId === tab.id;
@@ -204,10 +198,10 @@ export function FeySpotlight() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTabId(tab.id)}
-                      className={`transition-all duration-200 flex items-center gap-1.5 text-xs font-mono ${
+                      className={`transition-all duration-200 flex items-center gap-1.5 text-xs font-mono pb-1 relative ${
                         isActive
-                          ? "text-chartreuse font-bold border-b-2 border-chartreuse pb-0.5"
-                          : "text-white/60 hover:text-white pb-0.5"
+                          ? "text-white font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-white"
+                          : "text-white/50 hover:text-white/90"
                       }`}
                     >
                       <Icon className="w-3.5 h-3.5" />
@@ -218,70 +212,58 @@ export function FeySpotlight() {
               </div>
             </div>
 
-            {/* Actual Live Screenshot Frame */}
-            <div className="relative border border-white/15 bg-black/40 rounded-sm overflow-hidden shadow-2xl">
-              {/* Browser Address Bar */}
-              <div className="px-4 py-2 bg-black/60 border-b border-white/10 flex items-center justify-between font-mono text-[11px] text-white/50">
-                <div className="flex items-center gap-2 truncate">
-                  <span className="text-emerald-400 font-bold">HTTPS</span>
-                  <span className="text-white/80">{activeTab.url}</span>
-                </div>
-                <a
-                  href={activeTab.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-chartreuse hover:underline text-[10px] uppercase font-bold shrink-0 ml-2 inline-flex items-center gap-1"
+            {/* Clean Screenshot Display (Unframed, Pristine Studio Presentation) */}
+            <div className="overflow-hidden border border-white/15 bg-white shadow-xl">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeTab.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="w-full h-auto block"
                 >
-                  <span>Open Live</span>
-                  <ArrowUpRight className="w-3 h-3" />
-                </a>
-              </div>
+                  <Image
+                    src={activeTab.image}
+                    alt={activeTab.alt}
+                    priority
+                    placeholder="blur"
+                    className="w-full h-auto block object-cover"
+                    sizes="(max-width: 1024px) 100vw, 650px"
+                  />
+                </motion.div>
+              </AnimatePresence>
+            </div>
 
-              {/* Live Captured Screenshot Image with Next.js Image static import */}
-              <div className="relative w-full overflow-hidden bg-[#FAF7F0] group">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeTab.id}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.25 }}
-                    className="w-full h-auto block"
-                  >
-                    <Image
-                      src={activeTab.image}
-                      alt={activeTab.alt}
-                      priority
-                      placeholder="blur"
-                      className="w-full h-auto block object-cover"
-                      sizes="(max-width: 1024px) 100vw, 650px"
-                    />
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-
-              {/* Caption Overlay */}
-              <div className="p-4 bg-black/90 border-t border-white/10 space-y-1">
-                <div className="flex items-center justify-between font-mono text-xs">
-                  <span className="text-chartreuse font-bold">
-                    {activeTab.headline}
-                  </span>
-                  <span className="text-white/40 text-[10px]">REAL LIVE VIEW</span>
-                </div>
-                <p className="text-xs text-white/70 leading-relaxed">
+            {/* Minimalist Info Caption */}
+            <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-mono text-xs">
+              <div>
+                <strong className="text-white font-bold block text-sm">
+                  {activeTab.headline}
+                </strong>
+                <span className="text-white/60 text-xs">
                   {activeTab.description}
-                </p>
+                </span>
               </div>
+              <a
+                href={activeTab.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-white hover:text-terra-bright underline inline-flex items-center gap-1 font-bold pt-1 sm:pt-0"
+              >
+                <span>Launch View</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
-          <div className="pt-5 text-xs text-white/50 flex justify-between items-center border-t border-white/10 font-mono">
+          <div className="pt-6 mt-6 text-xs text-white/50 flex justify-between items-center border-t border-white/10 font-mono">
             <span>COGNITIVE ARTICULATION PLATFORM</span>
             <a
               href="https://fey.lokinlabs.com.ng"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-chartreuse hover:underline inline-flex items-center gap-1 font-semibold"
+              className="text-white hover:underline inline-flex items-center gap-1 font-semibold"
             >
               <span>fey.lokinlabs.com.ng</span>
               <ArrowUpRight className="w-3 h-3" />

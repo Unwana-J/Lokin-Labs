@@ -5,23 +5,26 @@
 @tailwind utilities;
 
 :root {
-  --canvas: #FAF7F0;
-  --canvas-surface: #EFE9DB;
-  --canvas-line: rgba(20, 26, 15, 0.08);
+  /* Crisp gallery canvas - replaces muddy Claude beige */
+  --canvas: #FFFFFF;
+  --canvas-surface: #F8F9FA;
+  --canvas-line: rgba(0, 0, 0, 0.08);
 
-  --olive-deep: #141B0E;
-  --olive-dark: #1E2714;
-  --olive-rich: #323F23;
-  --olive-subtle: rgba(50, 63, 35, 0.05);
+  /* Deep obsidian contrast - replaces muddy military olive */
+  --obsidian-deep: #090A0E;
+  --obsidian-dark: #12141A;
+  --obsidian-surface: #181B22;
+  --obsidian-subtle: rgba(255, 255, 255, 0.05);
 
+  /* Studio brand accents */
   --terra-crimson: #9B283A;
-  --terra-bright: #D33D54;
-  --chartreuse: #C4E456;
-  --gold-ochre: #D99B26;
+  --terra-bright: #BA3248;
+  --gold-warm: #E5A024;
 
-  --text-dark: #11150D;
-  --text-muted: #535C48;
-  --text-soft: #858E79;
+  /* Typography ink */
+  --text-dark: #09090B;
+  --text-muted: #52525B;
+  --text-soft: #A1A1AA;
 }
 
 body {
@@ -55,12 +58,12 @@ body {
 
 /* Table row architectural hover */
 .ledger-row {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
   border-bottom: 1px solid var(--canvas-line);
 }
 
 .ledger-row:hover {
-  background-color: var(--olive-subtle);
+  background-color: #F8F9FA;
 }
 
 /* Monospace font utility */

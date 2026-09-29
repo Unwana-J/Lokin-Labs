@@ -7,21 +7,23 @@ export function Manifesto() {
   return (
     <section
       id="thesis"
-      className="min-h-screen bg-olive-deep text-white flex items-center px-6 sm:px-12 py-28 relative"
+      className="min-h-screen bg-obsidian-deep text-white flex items-center px-6 sm:px-12 py-28 relative"
     >
       <div className="max-w-5xl mx-auto space-y-12">
-        <span className="font-mono text-xs text-chartreuse uppercase tracking-widest block">
+        <span className="font-mono text-xs text-neutral-400 uppercase tracking-widest block">
           § 01 / THE THROUGH-LINE
         </span>
 
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.06]">
           Most product work focuses on one side of the equation. <br />
-          <span className="text-chartreuse">We own the full loop.</span>
+          <span className="text-white underline decoration-terra-crimson decoration-4 underline-offset-8">
+            We own the full loop.
+          </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-8 text-lg sm:text-xl font-normal leading-relaxed text-white/80 border-t border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-8 text-lg sm:text-xl font-normal leading-relaxed text-neutral-300 border-t border-white/10">
           <div className="space-y-4">
-            <h3 className="font-mono text-sm uppercase text-chartreuse font-bold">
+            <h3 className="font-mono text-sm uppercase text-white font-bold">
               01 / The Delight Layer
             </h3>
             <p>
@@ -32,7 +34,7 @@ export function Manifesto() {
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="font-mono text-sm uppercase text-chartreuse font-bold">
+            <h3 className="font-mono text-sm uppercase text-white font-bold">
               02 / The Resilience Layer
             </h3>
             <p>
@@ -45,14 +47,14 @@ export function Manifesto() {
         </div>
 
         {/* Studio Philosophy Block */}
-        <div className="p-6 bg-white/5 border border-white/10 rounded-sm font-mono text-xs sm:text-sm text-white/90 leading-relaxed">
+        <div className="p-6 bg-white/5 border border-white/10 rounded-sm font-mono text-xs sm:text-sm text-neutral-200 leading-relaxed">
           &ldquo;We thrive where building the right thing and getting it reliably to customers are treated as one responsibility, not two.&rdquo;
         </div>
 
         <div className="pt-2">
           <Link
             href="#flagship"
-            className="btn-studio bg-chartreuse text-olive-deep hover:bg-white text-xs font-bold uppercase tracking-wider"
+            className="btn-studio bg-white text-ink-dark hover:bg-neutral-200 text-xs font-bold uppercase tracking-wider"
           >
             <span>Explore The Crown Instrument (Fey)</span>
             <ArrowRight className="w-4 h-4" />

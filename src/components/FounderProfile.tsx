@@ -8,7 +8,7 @@ export function FounderProfile() {
       id="about-creator"
       className="min-h-screen px-6 sm:px-12 py-28 max-w-5xl mx-auto flex flex-col justify-center border-t border-[rgba(20,26,15,0.08)]"
     >
-      <div className="space-y-8 border-l-2 border-olive-rich pl-8 sm:pl-12">
+      <div className="space-y-8 border-l-2 border-ink-dark pl-8 sm:pl-12">
         <span className="font-mono text-xs text-terra-crimson font-semibold uppercase tracking-wider block">
           [ FOUNDRY LEADERSHIP ]
         </span>

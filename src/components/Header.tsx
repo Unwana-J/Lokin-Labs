@@ -8,11 +8,11 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#FAF7F0]/95 border-b border-[rgba(20,26,15,0.1)]">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/95 border-b border-black/[0.08]">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
         {/* Studio Identifier */}
         <Link href="#hero" className="flex items-center gap-3.5 group">
-          <span className="w-3.5 h-3.5 bg-olive-deep transition-transform duration-300 group-hover:rotate-45" />
+          <span className="w-3.5 h-3.5 bg-ink-dark transition-transform duration-300 group-hover:rotate-45" />
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
           </span>
@@ -55,7 +55,7 @@ export function Header() {
             href="https://fey.lokinlabs.com.ng"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-studio bg-olive-deep text-white hover:bg-terra-crimson text-xs sm:text-sm font-bold shadow-sm"
+            className="btn-studio bg-ink-dark text-white hover:bg-terra-crimson text-xs sm:text-sm font-bold shadow-sm"
           >
             <span>Launch Fey</span>
             <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
@@ -74,7 +74,7 @@ export function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[rgba(20,26,15,0.1)] bg-canvas px-6 py-6 space-y-4 font-mono text-sm uppercase tracking-wider font-bold">
+        <div className="md:hidden border-t border-black/[0.08] bg-white px-6 py-6 space-y-4 font-mono text-sm uppercase tracking-wider font-bold">
           <Link
             href="#thesis"
             onClick={() => setMobileMenuOpen(false)}

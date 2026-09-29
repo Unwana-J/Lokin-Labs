@@ -9,11 +9,11 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-olive-deep text-white px-6 sm:px-12 py-16 border-t border-white/10">
+    <footer className="bg-obsidian-deep text-white px-6 sm:px-12 py-16 border-t border-white/10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="space-y-2">
           <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 bg-chartreuse" />
+            <span className="w-2.5 h-2.5 bg-terra-crimson" />
             <span className="font-bold text-lg text-white uppercase tracking-tight">
               Lokin Labs
             </span>
@@ -28,25 +28,25 @@ export function Footer() {
             href="https://fey.lokinlabs.com.ng"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-chartreuse transition-colors"
+            className="hover:text-white transition-colors"
           >
             Fey Platform ↗
           </a>
           <a
             href="mailto:letslokin@gmail.com"
-            className="hover:text-chartreuse transition-colors"
+            className="hover:text-white transition-colors"
           >
             letslokin@gmail.com
           </a>
           <Link
             href="#warehouse"
-            className="hover:text-chartreuse transition-colors"
+            className="hover:text-white transition-colors"
           >
             The Ledger
           </Link>
           <Link
             href="#thesis"
-            className="hover:text-chartreuse transition-colors"
+            className="hover:text-white transition-colors"
           >
             Philosophy
           </Link>
