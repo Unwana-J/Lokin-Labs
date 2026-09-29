@@ -2,7 +2,7 @@
 
 > **"We get an idea and we don't let it go until it's live."**
 
-The official website and product catalog for **Lokin Labs** ([lokinlabs.com.ng](https://lokinlabs.com.ng)), an independent digital product lab and software foundry based in Lagos, Nigeria.
+The official website and product catalog for **Lokin Labs** ([lokinlabs.com.ng](https://lokinlabs.com.ng)), an independent digital product lab and software foundry based in Abuja, Nigeria.
 
 ---
 

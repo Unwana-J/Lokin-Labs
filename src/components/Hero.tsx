@@ -100,7 +100,7 @@ export function Hero() {
             STUDIO LOCATION
           </span>
           <span className="text-ink-dark font-bold">
-            LAGOS, NIGERIA · GLOBAL
+            ABUJA, NIGERIA · GLOBAL
           </span>
         </div>
         <div>

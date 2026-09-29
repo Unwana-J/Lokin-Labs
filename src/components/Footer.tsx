@@ -19,7 +19,7 @@ export function Footer() {
             </span>
           </div>
           <p className="text-xs text-white/50 font-mono">
-            © 2026 Lokin Labs. All rights reserved. Lagos, Nigeria · Global.
+            © 2026 Lokin Labs. All rights reserved. Abuja, Nigeria · Global.
           </p>
         </div>
 

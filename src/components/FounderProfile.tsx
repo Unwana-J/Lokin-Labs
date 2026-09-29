@@ -56,7 +56,7 @@ export function FounderProfile() {
             </span>
             <span className="text-xs font-medium text-ink-dark flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-terra-crimson" />
-              Lagos, Nigeria · Global
+              Abuja, Nigeria · Global
             </span>
           </div>
           <div>
