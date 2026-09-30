@@ -17,9 +17,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-ink-dark leading-[1.02]"
         >
-          We get an idea and <br />
-          we don’t let it go <br />
-          <span className="text-terra-crimson">until it’s live.</span>
+          Software built with obsession. <br />
+          <span className="text-terra-crimson">Impossible to put down.</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -29,8 +28,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl sm:text-2xl text-ink-muted font-normal max-w-3xl leading-relaxed"
         >
-          Lokin Labs is an independent digital product lab. We build software that&apos;s
-          sharp to use, impossible to put down, and deeply enjoyable—from vocal
+          Lokin Labs is an independent digital product lab. We forge software that&apos;s
+          sharp to use, tactile to the touch, and deeply enjoyable—from vocal
           articulation platforms to AI meeting intelligence and financial parsers.
         </motion.p>
 
