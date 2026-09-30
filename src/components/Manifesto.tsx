@@ -21,9 +21,9 @@ export function Manifesto() {
           </span>
 
           <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] text-white max-w-5xl">
-            We turn obsessive curiosities{" "}
+            Most software is built to be discussed.{" "}
             <span className="text-terra-crimson">
-              into software people refuse to put down.
+              We build software to be felt.
             </span>
           </h2>
         </div>
