@@ -19,12 +19,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lokin Labs — Digital Product Lab",
     description:
-      "We get an idea and we don't let it go until it's live.",
+      "Software built with obsession. Impossible to put down.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
     shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    apple: "/icon-192.png",
   },
 };
 
