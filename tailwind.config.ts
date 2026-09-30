@@ -47,7 +47,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "'Cabinet Grotesk'",
+          "'Plus Jakarta Sans'",
           "-apple-system",
           "BlinkMacSystemFont",
           "'Segoe UI'",
