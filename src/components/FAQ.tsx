@@ -19,9 +19,9 @@ const FAQS: FAQItem[] = [
   },
   {
     number: "02",
-    question: "Are all these products actually live?",
+    question: "How can I access the products in the catalog?",
     answer:
-      "Yes. Every product showcased—from Fey to Creed, Roost AI, Vantage, Qore, and Lokin Study—is live and accessible online right now.",
+      "Our flagship platform, Fey, is live in public production right now. Our other engineered systems—Creed, Roost AI, Vantage, Qore SD-PIS, and Lokin Study—are currently in Partner Access and Private Beta; click 'Request Access' on any system in the catalog to schedule a walkthrough or copy our direct studio address.",
   },
   {
     number: "03",
@@ -33,7 +33,7 @@ const FAQS: FAQItem[] = [
     number: "04",
     question: "How can we collaborate, partner, or get in touch?",
     answer:
-      "Whether you are interested in design partnership, product development, or exploratory discussions, we welcome direct contact at letslokin@gmail.com.",
+      "Whether you are interested in design partnership, bespoke product engineering, or private system walkthroughs, we welcome direct contact at letslokin@gmail.com.",
   },
 ];
 
@@ -47,18 +47,18 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="px-6 sm:px-12 py-28 max-w-5xl mx-auto border-t border-[rgba(20,26,15,0.08)]"
+      className="px-6 sm:px-12 py-28 max-w-5xl mx-auto border-t border-black/[0.08]"
     >
       <div className="mb-12">
         <span className="font-mono text-xs text-ink-muted uppercase tracking-wider block mb-2">
-          [ FAQ ]
+          § 05 / FAQ
         </span>
         <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-ink-dark">
           Frequently Asked Questions.
         </h2>
       </div>
 
-      <div className="divide-y divide-[rgba(20,26,15,0.08)] border-y border-[rgba(20,26,15,0.08)]">
+      <div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">
         {FAQS.map((item, idx) => {
           const isOpen = openIndex === idx;
           return (

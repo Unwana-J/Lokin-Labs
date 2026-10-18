@@ -10,8 +10,8 @@ export interface ProductItem {
   techStack: string;
   domain: string;
   status: string;
-  statusType: "production" | "live" | "beta";
-  liveUrl: string;
+  statusType: "production" | "live" | "beta" | "inactive" | "partner-access";
+  liveUrl?: string;
   categories: Array<"flagship" | "ai-tools" | "delivery" | "learning">;
 }
 
@@ -44,9 +44,8 @@ export const PRODUCTS: ProductItem[] = [
       "Automated action item extraction, real-time RAID log tracking, Notion sync, and project health diagnostics for software teams.",
     techStack: "Claude 3.5 · Gemini · Notion Sync · Supabase",
     domain: "Delivery Intelligence",
-    status: "Live Deployment",
-    statusType: "live",
-    liveUrl: "https://creed-red.vercel.app/",
+    status: "Private / Demo Only",
+    statusType: "inactive",
     categories: ["ai-tools", "delivery"],
   },
   {
@@ -60,9 +59,8 @@ export const PRODUCTS: ProductItem[] = [
       "Auto-categorizes transactions into custom expense categories with instant PDF reporting, spending insights, and receipt audits.",
     techStack: "Google GenAI · Recharts · jsPDF · Next.js",
     domain: "Fintech & Bookkeeping",
-    status: "Live Deployment",
-    statusType: "live",
-    liveUrl: "https://roost-ai.vercel.app/",
+    status: "Private / Demo Only",
+    statusType: "inactive",
     categories: ["ai-tools"],
   },
   {
@@ -76,25 +74,23 @@ export const PRODUCTS: ProductItem[] = [
       "Features an AI-powered coach analyzing leadership patterns, KPI metrics, delivery velocity, and team milestones.",
     techStack: "React · GenAI · Recharts · Tailwind",
     domain: "Executive Leadership",
-    status: "Live Deployment",
-    statusType: "live",
-    liveUrl: "https://vantage-nine-steel.vercel.app/",
+    status: "Private / Demo Only",
+    statusType: "inactive",
     categories: ["ai-tools", "delivery"],
   },
   {
-    id: "qore-sd-pis",
+    id: "helm-pmis",
     code: "LK-05",
-    name: "Qore SD-PIS",
+    name: "Helm PMIS",
     badge: "DELIVERY TRACKER",
     badgeColor: "text-stone-700",
-    thesis: "Strategic Delivery & Project Information System.",
+    thesis: "Strategic Delivery & Project Management Information System.",
     description:
       "Engineered for portfolio tracking, milestone governance, technical implementation management, and multi-stream delivery oversight.",
     techStack: "React · Vite · Supabase · Tailwind",
     domain: "Project Governance",
-    status: "Live Deployment",
-    statusType: "live",
-    liveUrl: "https://qore-pd.vercel.app/",
+    status: "Private / Demo Only",
+    statusType: "inactive",
     categories: ["delivery"],
   },
   {
@@ -108,9 +104,8 @@ export const PRODUCTS: ProductItem[] = [
       "Tracks active study cycles, subject progress, and personalized knowledge retention using spaced repetition.",
     techStack: "React 19 · Google GenAI · Framer Motion",
     domain: "Learning & Education",
-    status: "Live Deployment",
-    statusType: "live",
-    liveUrl: "https://lokin-study-app.vercel.app/",
+    status: "Private / Demo Only",
+    statusType: "inactive",
     categories: ["learning"],
   },
 ];

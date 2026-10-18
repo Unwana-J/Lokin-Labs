@@ -7,17 +7,17 @@ export function Manifesto() {
   return (
     <section
       id="thesis"
-      className="min-h-screen bg-obsidian-deep text-white flex items-center px-6 sm:px-12 py-28 relative overflow-hidden"
+      className="bg-obsidian-deep text-white flex items-center px-6 sm:px-12 py-24 sm:py-28 relative overflow-hidden"
     >
       {/* Ambient background atmosphere */}
       <div className="absolute top-0 right-0 w-96 sm:w-[500px] h-96 sm:h-[500px] rounded-full bg-terra-crimson/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 sm:w-[500px] h-96 sm:h-[500px] rounded-full bg-brand-blue/10 blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto space-y-14 relative z-10 w-full">
+      <div className="max-w-6xl mx-auto space-y-12 relative z-10 w-full">
         {/* Section Header */}
         <div className="space-y-4">
           <span className="font-mono text-xs text-neutral-400 uppercase tracking-widest block">
-            § 01 / LAB PRINCIPLES
+            § 02 / LAB PRINCIPLES
           </span>
 
           <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] text-white max-w-5xl">
@@ -31,13 +31,13 @@ export function Manifesto() {
         {/* 3 Tactile Lab Pillar Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 01 */}
-          <div className="group relative p-7 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
+          <div className="group relative p-7 rounded-[4px] bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between text-neutral-400">
                 <span className="font-mono text-xs uppercase tracking-wider font-semibold text-neutral-500 group-hover:text-terra-crimson transition-colors">
                   01 / CRAFT
                 </span>
-                <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
+                <div className="w-8 h-8 rounded-[4px] bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
                   <Layers className="w-4 h-4" />
                 </div>
               </div>
@@ -56,13 +56,13 @@ export function Manifesto() {
           </div>
 
           {/* Card 02 */}
-          <div className="group relative p-7 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
+          <div className="group relative p-7 rounded-[4px] bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between text-neutral-400">
                 <span className="font-mono text-xs uppercase tracking-wider font-semibold text-neutral-500 group-hover:text-terra-crimson transition-colors">
                   02 / DELIVERY
                 </span>
-                <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
+                <div className="w-8 h-8 rounded-[4px] bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
                   <Cpu className="w-4 h-4" />
                 </div>
               </div>
@@ -81,13 +81,13 @@ export function Manifesto() {
           </div>
 
           {/* Card 03 */}
-          <div className="group relative p-7 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
+          <div className="group relative p-7 rounded-[4px] bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between text-neutral-400">
                 <span className="font-mono text-xs uppercase tracking-wider font-semibold text-neutral-500 group-hover:text-terra-crimson transition-colors">
                   03 / INTELLECT
                 </span>
-                <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
+                <div className="w-8 h-8 rounded-[4px] bg-white/5 border border-white/10 flex items-center justify-center text-terra-crimson">
                   <Sparkles className="w-4 h-4" />
                 </div>
               </div>
@@ -119,10 +119,10 @@ export function Manifesto() {
           </div>
 
           <Link
-            href="#flagship"
+            href="#warehouse"
             className="btn-studio bg-white text-ink-dark hover:bg-neutral-200 text-xs font-bold uppercase tracking-wider self-start sm:self-auto"
           >
-            <span>Explore Flagship (Fey)</span>
+            <span>Explore Full Catalog (6)</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

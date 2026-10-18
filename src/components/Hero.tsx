@@ -10,6 +10,17 @@ export function Hero() {
       className="relative min-h-[92vh] flex flex-col justify-between px-6 sm:px-12 pt-32 pb-14 max-w-7xl mx-auto"
     >
       <div className="max-w-5xl space-y-8 my-auto">
+        {/* Architectural Studio Eyebrow */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-ink-muted"
+        >
+          <span className="h-2 w-2 bg-terra-crimson inline-block" />
+          <span>INDEPENDENT DIGITAL PRODUCT LAB · ABUJA &amp; GLOBAL</span>
+        </motion.div>
+
         {/* Main Headline in Collective Studio Voice */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +64,7 @@ export function Hero() {
             href="#warehouse"
             className="btn-studio border border-black/20 text-ink-dark hover:border-black/60 bg-transparent text-sm"
           >
-            <span>Explore Products</span>
+            <span>Explore Product Catalog (6)</span>
             <ArrowDown className="w-4 h-4" />
           </a>
         </motion.div>
@@ -68,34 +79,34 @@ export function Hero() {
       >
         <div>
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
-            STUDIO FOCUS
+            FLAGSHIP PLATFORM (LK-01)
           </span>
           <span className="text-ink-dark font-bold">
-            PRODUCT DESIGN &amp; ENGINEERING
+            FEY · 22 DISCIPLINES &amp; 90S DRILLS
           </span>
         </div>
         <div>
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
-            FLAGSHIP RELEASE
+            MULTIPLAYER ARENA
           </span>
           <span className="text-ink-dark font-bold">
-            FEY · ARTICULATION PLATFORM
+            3 LIVE PARLOR &amp; DEBATE MODES
           </span>
         </div>
         <div>
           <span className="block text-ink-soft uppercase text-[10px] mb-1">
-            STUDIO LOCATION
-          </span>
-          <span className="text-ink-dark font-bold">
-            ABUJA, NIGERIA · GLOBAL
-          </span>
-        </div>
-        <div>
-          <span className="block text-ink-soft uppercase text-[10px] mb-1">
-            CATALOG STATUS
+            PROPRIETARY PORTFOLIO
           </span>
           <span className="text-emerald-700 font-bold">
-            6 LIVE PRODUCTS
+            6 ENGINEERED SYSTEMS · 1 PUBLIC
+          </span>
+        </div>
+        <div>
+          <span className="block text-ink-soft uppercase text-[10px] mb-1">
+            STUDIO MANDATE
+          </span>
+          <span className="text-ink-dark font-bold">
+            DESIGN, AI SYSTEMS &amp; VENTURE LAB
           </span>
         </div>
       </motion.div>

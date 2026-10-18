@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lokin Labs — Fun, Sharp & Thoughtful Digital Products",
+  title: "Lokin Labs — Software Built With Obsession",
   description:
-    "An independent digital product lab. We get an idea and we don't let it go until it's live.",
+    "An independent digital product lab in Abuja & Global. Creators of Fey (Vocal Articulation Platform), Creed, Roost AI, Vantage, Qore SD-PIS & Lokin Study.",
   metadataBase: new URL("https://lokinlabs.com.ng"),
   openGraph: {
-    title: "Lokin Labs — Fun, Sharp & Thoughtful Digital Products",
+    title: "Lokin Labs — Software Built With Obsession",
     description:
-      "Independent product lab building sharp, enjoyable software experiences across vocal cognition, AI tools, fintech parsers, and delivery systems.",
+      "Independent digital product lab forging sharp, tactile software across vocal cognition, AI meeting intelligence, fintech parsers, and delivery systems.",
     url: "https://lokinlabs.com.ng",
     siteName: "Lokin Labs",
     locale: "en_US",
@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans selection:bg-[#2E3D27] selection:text-white bg-canvas text-ink-dark">
+      <body className="font-sans selection:bg-terra-crimson selection:text-white bg-canvas text-ink-dark">
         {children}
       </body>
     </html>

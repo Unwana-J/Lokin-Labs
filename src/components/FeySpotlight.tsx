@@ -82,8 +82,8 @@ export function FeySpotlight() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[rgba(0,0,0,0.08)] gap-6">
         <div>
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-terra-light border border-terra-crimson/20 text-xs font-mono font-bold text-terra-crimson mb-3">
-            <span>FLAGSHIP · VOCAL ARTICULATION PLATFORM</span>
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-[2px] bg-terra-light border border-terra-crimson/25 text-xs font-mono font-bold text-terra-crimson mb-3">
+            <span>§ 01 / FLAGSHIP · VOCAL ARTICULATION PLATFORM</span>
           </div>
           <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-ink-dark">
             Fey — Think Deeper. Speak Better.
@@ -93,8 +93,9 @@ export function FeySpotlight() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <span className="font-mono text-xs text-emerald-700 font-semibold">
-            LIVE IN PRODUCTION
+          <span className="inline-flex items-center gap-2 font-mono text-xs text-emerald-700 font-semibold">
+            <span className="h-2 w-2 rounded-full bg-emerald-600 animate-pulse" />
+            <span>LIVE IN PRODUCTION</span>
           </span>
           <a
             href="https://fey.lokinlabs.com.ng"

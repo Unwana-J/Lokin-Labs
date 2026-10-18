@@ -13,8 +13,8 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
         {/* Studio Identifier */}
         <Link href="#hero" className="flex items-center gap-2.5 group">
-          <span className="flex items-center justify-center w-9 h-9 rounded-[8px] bg-[#2E3D27] shrink-0">
-            <BrandLogo size={22} color="white" />
+          <span className="flex items-center justify-center w-9 h-9 rounded-[4px] bg-obsidian-deep group-hover:bg-terra-crimson transition-colors duration-200 shrink-0">
+            <BrandLogo size={20} color="white" />
           </span>
           <span className="font-black text-xl tracking-tight text-ink-dark uppercase">
             Lokin Labs
@@ -24,16 +24,16 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-9 text-xs font-mono uppercase tracking-wider font-bold text-ink-dark">
           <Link
-            href="#thesis"
-            className="hover:text-terra-crimson transition-colors duration-200"
-          >
-            Philosophy
-          </Link>
-          <Link
             href="#flagship"
             className="text-terra-crimson hover:text-terra-bright transition-colors duration-200 font-extrabold"
           >
             Flagship (Fey)
+          </Link>
+          <Link
+            href="#thesis"
+            className="hover:text-terra-crimson transition-colors duration-200"
+          >
+            Philosophy
           </Link>
           <Link
             href="#warehouse"
@@ -76,18 +76,18 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-black/[0.08] bg-white px-6 py-6 space-y-4 font-mono text-sm uppercase tracking-wider font-bold">
           <Link
-            href="#thesis"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-ink-dark hover:text-terra-crimson py-1"
-          >
-            § 01 / Philosophy
-          </Link>
-          <Link
             href="#flagship"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-terra-crimson font-extrabold py-1"
           >
-            § 02 / Flagship (Fey)
+            § 01 / Flagship (Fey)
+          </Link>
+          <Link
+            href="#thesis"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-ink-dark hover:text-terra-crimson py-1"
+          >
+            § 02 / Philosophy
           </Link>
           <Link
             href="#warehouse"
